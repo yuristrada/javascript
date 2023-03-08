@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>JavaScript</title>
+   </head>
+   <body>
+       <script>
+            var vetor = new Array(10)
+            var total=0
+            var pags
+
+        for (var i = 0 ; i < vetor.length ; i++){
+            vetor[i] = new Array (prompt("Digite os Ns "+i))
+            vetor[i] = parseInt(vetor[i])
+
+                total+=vetor[i]
+
+            document.write('Valores R$ '+ vetor[i]+ "<br>")
+        }
+
+        document.write("Valor total dos produtos <br> R$ "+ total)
+
+        pags =prompt("Pagamento <br> (c) para Crédito, (d) para Débito")
+            if(pags==='c'){
+                document.write('<br>Pagamento Efetuado no Crédito')
+            }else {
+                document.write('<br>Pagamento Efetuado no Débito')
+            }
+
+       </script>
+   </body>
+</html>
