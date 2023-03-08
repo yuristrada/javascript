@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>JavaScript</title>
+   </head>
+   <body>
+       <script>
+        var vetor = new Array(2);
+
+        for(var i=0; i< vetor.length; i++){
+            vetor[i] = new Array (2);
+
+        }
+        var h=0;
+
+        for(var i=0 ; i<2; i++){
+            for (var j=0; j<2; j++){
+                vetor[i][j] = h++;
+                document.write(vetor [i][j] +  " ")
+            }
+        }
+       </script>
+   </body>
+</html>
