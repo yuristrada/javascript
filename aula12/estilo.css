@@ -1,0 +1,40 @@
+* body{
+    margin: 0px;
+    padding: 0px;
+}
+#topo{
+    width: 980px ; /*  Largura */ 
+    height: 200px ; /* Altura */
+    background-color: darkturquoise ; /* Cor do fundo */
+    margin: auto; /* Centraliza a DIV */
+}
+#banner{
+    width: 980px ; /*  Largura */ 
+    height: 350px ; /* Altura */
+    background-color: rgb(16, 88, 188) ; /* Cor do fundo */
+    margin: auto; /* Centraliza a DIV */
+}
+#container {
+    width: 980px ; /*  Largura */ 
+    height: 500px ; /* Altura */
+    /* Cor do fundo */
+    margin: auto; /* Centraliza a DIV */
+}
+#esquerda{
+    width: 400px ; /*  Largura */ 
+    height: 500px ; /* Altura */
+    background-color: rgb(10, 102, 114) ; /* Cor do fundo */
+    float: left ;
+}
+#direita{
+    width: 400px ; /*  Largura */ 
+    height: 500px ; /* Altura */
+    background-color: rgb(41, 75, 123) ; /* Cor do fundo */
+    float: right; /* Centraliza a DIV */
+}
+#rodape{
+    width: 980px ; /*  Largura */ 
+    height: 90px ; /* Altura */
+    background-color: rgb(45, 8, 94) ; /* Cor do fundo */
+    margin: auto; /* Centraliza a DIV */
+}
