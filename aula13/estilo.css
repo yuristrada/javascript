@@ -1,6 +1,7 @@
 * body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 #topo{
@@ -33,6 +34,7 @@
 
 #menu a{
     text-decoration: none;
+    font-size: 25px;
 }
 #menu a:hover{
     color: brown;
@@ -81,3 +83,4 @@
     margin: auto;
     background-color: aquamarine;
 }
+
