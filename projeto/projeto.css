@@ -1,0 +1,53 @@
+* body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#topo{
+    width: 960px;
+    height: 150px;
+    margin: auto;
+
+}
+
+#logo{
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+
+#logo img{
+    width: 180px;
+    margin: 10px 10px 10px 10px;
+}
+
+#menu{
+    width: 760px;
+    height: 80px;
+    float: right;
+    text-align: center;
+    word-spacing: 20px;
+    color: black;
+    margin-top: 50px;
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: 22px;
+}
+#menu a:hover{
+    color: green;
+}
+
+.content{
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    text-align: center;
+}
+
+.coluna{
+    width: 120px;
+    height: 768px;
+}
