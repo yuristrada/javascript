@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.percentual{
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+    padding: 10px;
+}
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url(./Imagens_Site/slider/slider-bg-2.jpg);
+    background-color: rgba(0, 127, 85);
+    opacity: 0.7;
+}
