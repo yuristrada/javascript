@@ -46,6 +46,12 @@ body{
     padding-right: 20px;
 }
 
+.text{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .textjustify{
     text-align: justify;
     padding-left: 20px;
@@ -70,6 +76,12 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+.titlejus{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
 .titlewhite{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -78,6 +90,8 @@ body{
 
 .kimg{
     width: 100%;
+    -webkit-box-shadow: 5px 5px 37px 17px #000000; 
+    box-shadow: 10px 5px 5px black;
 
 }
 
@@ -87,5 +101,11 @@ body{
     background-color: #212529;
 }
 
+.imgcliente{
+    width: 260px;
+    height: 380px;
+    -webkit-box-shadow: 2px 2px 18px 9px grey; 
+    box-shadow: 5px 2px 2px grey;
+}
 
 
