@@ -103,9 +103,31 @@ body{
 
 .imgcliente{
     width: 260px;
-    height: 380px;
-    -webkit-box-shadow: 2px 2px 18px 9px grey; 
-    box-shadow: 5px 2px 2px grey;
+    height: 300px;
+    -webkit-box-shadow: 5px 5px 37px 17px grey; 
+    box-shadow: 10px 5px 5px grey;
+
+    
 }
 
+.listra{
+    width: 90px;
+    height: 2px;
+    background-color:  rgb(49,187,158);
+}
 
+.cont{
+    margin: auto;
+}
+
+.botsub{
+    width: 540px;
+    height: 100px;
+    margin: auto;
+    
+}
+.form-group{
+    text-align: center;
+    width: 540px;
+    height: 30px;
+}
