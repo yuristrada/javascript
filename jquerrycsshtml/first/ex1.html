@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    
+    
+    <title>aula 123</title>
+  </head>
+    <body>
+      <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Digite N1</label>
+              <input type="text" class="form-control" id="n1" name="n1" placeholder="N1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Digite N2</label>
+                <input type="text" class="form-control" id="n2" name="n2" placeholder="N2">
+                </div>
+                           
+            <button type="submit" onclick="imprimirNome()" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+
+        <script>
+          function imprimirNome(){
+            var n1 = parseInt( document.getElementById('n1').value)
+            var n2 = parseInt( document.getElementById('n2').value)
+          
+            if(n1  === ''){
+                alert('Campo em branco')
+           }else if( n2  === ''){
+                alert('Email em branco')
+          }else{
+            alert(n1 +" "+ n2) 
+            document.write(n1 + " " + n2)
+              
+          }
+        }
+        </script>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </body>
+</html>
+    
