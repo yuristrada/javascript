@@ -131,3 +131,20 @@ body{
     width: 540px;
     height: 30px;
 }
+
+@media(max-width: 768px){
+    .percentual{
+        width: 100%;
+        height: auto;
+        background-color: #212529;
+        padding: 10px;
+        margin-bottom: 80px;
+    }
+    .nav-link{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.nav-link{
+    color: white;
+}

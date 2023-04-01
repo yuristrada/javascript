@@ -56,33 +56,9 @@
             </form>
             </div>
 
-<script>
-    function validacaoFormularios(){
-        var nome= document.getElementById('nome').value
-        var email= document.getElementById('email').value
-        var opcao= document.getElementById('opcao').value
-        var check= document.getElementsByClassName('check')
-        var recebe= ''
+        <script src="validacao.js"></script>
 
-        if(nome===''){
-            alert('Campo em branco nome')
-        }else if(email===''){
-            alert('Campo em branco email')
-        }else{
-            for(var i=0; i<2; i++){
-                if(check[i].checked===true){
-                    recebe += check[i].value + ' '
-                }
-                if(recebe===''){
-                    alert('Selecione ao menos uma opção ')
-                }else{
-                    document.write(nome + ' ' + email + ' ' + opcao + ' ' + recebe)
-                }
-             
-            }
-        }
-    }
-</script>
+        </body>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

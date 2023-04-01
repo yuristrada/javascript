@@ -25,28 +25,28 @@
             <div class="form-row">
               <div class="form-group col-md-12">
                 <label for="inputEmail4">Nome</label>
-                <input type="nome" class="form-control" id="Nome" placeholder="Nome">
+                <input type="nome" class="form-control" id="nome" name="nome" placeholder="Nome">
               </div>
             </div>
             <div class="form-row">
             <div class="form-group col-md-3">
               <label for="inputAddress">CPF</label>
-              <input type="text" class="form-control" id="cpf" placeholder="Apenas números">
+              <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Apenas números">
             </div>
             <div class="form-group col-md-3">
               <label for="inputAddress2">Nascimento</label>
-              <input type="text" class="form-control" id="nasc" placeholder="DD/MM/AAAA">
+              <input type="text" class="form-control" id="nasc" name="nasc" placeholder="DD/MM/AAAA">
             </div>
            
                 Sexo
                 <div class="form-group col-md-3">
             <div class="form-check">
               
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+                <input class="form-check-input" type="radio" name="sexom" id="sexom" value="opcao1" checked>
                 <label class="form-check-label" for="exampleRadios1">
                   Masculino
                 </label>
-                <input style="margin-left: 29px;" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                <input style="margin-left: 29px;" class="form-check-input" type="radio" name="sexof" id="sexof" value="opcao2">
                 <label style="margin-left: 50px;" class="form-check-label" for="exampleRadios2">
                   Feminino
                 </label>
@@ -59,17 +59,17 @@
             <div class="form-row">
                 <div class="form-group col-md-3">
                   <label for="inputAddress">Telefone</label>
-                  <input type="text" class="form-control" id="tele" placeholder="XX XXXXX-XXXX">
+                  <input type="text" class="form-control" id="tele" name="tele" placeholder="XX XXXXX-XXXX">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputAddress2">Telefone</label>
-                  <input type="text" class="form-control" id="tele2" placeholder="XX XXXXX-XXXX">
+                  <input type="text" class="form-control" id="tele2" name="tele2" placeholder="XX XXXXX-XXXX">
                 </div>
             </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="Email" placeholder="Email@gmail.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email@gmail.com">
                 </div>
                 </div>          
                 <div class="form-row">  
@@ -99,7 +99,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="inputmsg">Como ficou sabendo da clínica</label>
-                <input type="clinic" class="form-control" id="clinic" >
+                <input type="clinic" class="form-control" id="clinic" name="clinic">
             </div>
             </div>          
 
@@ -110,38 +110,34 @@
               <br>
               <br>
               <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
+              
 
               <div class="container">
 <h1>   Responsável  </h1>
 <div class="form-row">
     <div class="form-group col-md-12">
       <label for="inputEmail4">Nome</label>
-      <input type="nome" class="form-control" id="inputNome" placeholder="Nome">
+      <input type="nome" class="form-control" id="nome2" placeholder="nome2">
     </div>
   </div>
   <div class="form-row">
   <div class="form-group col-md-3">
     <label for="inputAddress">cliente</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="">
+    <input type="text" class="form-control" id="cliente" name="cliente" placeholder="">
   </div>
   <div class="form-group col-md-3">
     <label for="inputAddress2">Nascimento</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="DD/MM/AAAA">
+    <input type="text" class="form-control" id="nasc2" name="nasc2" placeholder="DD/MM/AAAA">
   </div>
   
       Sexo
       <div class="form-group col-md-3">
   <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+      <input class="form-check-input" type="radio" name="check1" id="check1" value="opcao1" checked>
       <label class="form-check-label" for="exampleRadios1">
         Masculino
       </label>
-      <input style="margin-left: 29px;"class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+      <input style="margin-left: 29px;"class="form-check-input" type="radio" name="check2" id="check2" value="opcao2">
       <label style="margin-left: 50px;" class="form-check-label" for="exampleRadios2">
         Feminino
       </label>
@@ -177,11 +173,14 @@
         </select>
     </div>
               </div>
-              <button type="button" class="btn btn-success">Cadastrar</button>
+              <button type="button" onclick="cadastrar()" class="btn btn-success">Cadastrar</button>
     <button type="button" class="btn btn-danger">Cancelar</button>
-            <BR><BR><BR><BR></BR></BR></BR></BR>
+            <BR><BR>
+              
           </form>
         </div>
+
+        <script ></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
