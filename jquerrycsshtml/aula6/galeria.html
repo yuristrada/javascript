@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    
+
+
+    <title>aula 6</title>
+    <style>
+      .tabcontent{
+        display: none;
+
+      }
+      .tabcontent .ativa{
+        display: block;
+        display: show;
+      }
+
+      .imagem{
+        padding-left: 30px;
+        width: 310px;
+      }
+
+    </style>
+  </head>
+  <body>
+        <div class="container">
+          <div class="tabcontent ativa" id="galeria" style="display: block;">
+            <img src="./img/member-1.jpg" class="imagem">
+            <img src="./img/member-2.jpg" class="imagem">
+            <img src="./img/member-3.jpg" class="imagem">
+          </div>
+           
+          <div class="tabcontent" id="galeria">
+            <img src="./img/member-4.jpg" class="imagem">
+            <img src="./img/member-5.jpg" class="imagem">
+            <img src="./img/member-6.jpg" class="imagem">
+          </div>
+
+          <div class="tabcontent" id="galeria">
+            <img src="./img/member-7.jpg" class="imagem">
+            <img src="./img/member-8.jpg" class="imagem">
+            <img src="./img/about.jpg" class="imagem">
+          </div>
+          <button onclick="prev()"> < </button>
+          <button onclick="next()"> > </button>
+        </div>
+      
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+            $(document).ready( function(){
+                var a = 1
+                $('#galeria1').show()
+
+                function next(){
+                    if(a<3){
+                        $('.tabcontent').hide()
+                        a++
+                        $('#galeria' + (a)).show()
+                    }
+                }
+                function prev(){
+                    if(a>1){
+                        $('.tabcontent').hide()
+                        a--
+                        $('#galeria' + (a)).show()
+                    }
+                }
+               
+            })
+        </script>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
