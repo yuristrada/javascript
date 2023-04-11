@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>aula3</title>
+  </head>
+  <body>
+    <div id="app">
+        <div class="container">
+          <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="nome">Nome</label>
+                  <input type="text" class="form-control" v-model="nome" placeholder="Informe seu nome">
+                </div>
+
+                <div class="form-group col-md-4">
+                  <label for="cpf">CPF</label>
+                  <input type="text" class="form-control" v-model="cpf" placeholder="Informe seu CPF">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="address">Endereço</label>
+                  <input type="text" class="form-control" v-model="end" placeholder="Informe seu endereço">
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="exampleFormControlSelect1">Nível</label>
+                  <select class="form-control" v-model="niv">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="text" class="form-control" v-model="email" placeholder="Informe seu email">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputPassword">Senha</label>
+                    <input type="password" class="form-control" v-model="senha" placeholder="Informe sua senha">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="exampleFormControlSelect1">Status</label>
+                    <select class="form-control" v-model="stat">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+
+                  <button type="button" v-on:click="carregarTabela = 0" @click="listarAtributos()" class="btn btn-success">Enviar</button>
+                  <button type="button" v-on:click="carregarTabela = 1" @click="limparAtributos()" class="btn btn-outline-danger">Cancelar</button>
+
+                  <div v-show="carregarTabela"></div>
+                  <div v-show="!carregarTabela">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Nome</th>
+                          <th scope="col">CPF</th>
+                          <th scope="col">Endereço</th>
+                          <th scope="col">Nível</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Senha</th>
+                          <th scope="col">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>{{nome}}</td>
+                          <td>{{cpf}}</td>
+                          <td>{{end}}</td>
+                          <td>{{niv}}</td>
+                          <td>{{email}}</td>
+                          <td>{{senha}}</td>
+                          <td>{{stat}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            
+                  </div>
+
+              <!-- {{nome + '' + cpf + '' + end + '' + niv + '' + email + '' + senha + '' + stat}} -->
+
+              </div>
+        </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script>
+    var app = new Vue (   { 
+            el: '#app',
+            data(){
+                return{
+                    nome:'',
+                    cpf:'',
+                    end:'',
+                    niv:'',
+                    email:'',
+                    senha:'',
+                    stat:'',
+                    carregarTabela: true,
+                    
+                }
+                // init(){} 
+            },
+
+            methods: {
+                async listarAtributos(){
+                    this.nome = this.nome,
+                    this.cpf = this.cpf,
+                    this.end = this.end,
+                    this.niv = this.niv,
+                    this.email = this.email,
+                    this.senha = this.senha,
+                    this.stat = this.stat
+                },
+                async limparAtributos(){
+
+                  this.nome = '',
+                    this.cpf = '',
+                    this.end = '',
+                    this.niv = '',
+                    this.email = '',
+                    this.senha = '',
+                    this.stat = ''
+                }
+        }
+
+     }   )
+</script>
+  </body>
+</html>
